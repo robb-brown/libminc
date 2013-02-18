@@ -1,3 +1,6 @@
+#ifndef PARSEARGV_H
+#define PARSEARGV_H
+
 /*
  * ParseArgv.h --
  *
@@ -90,4 +93,6 @@ MNCAPI int ParseArgv _ANSI_ARGS_((int *argcPtr, char **argv,
 
 #if defined(__cplusplus)
 }
+#endif
+
 #endif
