@@ -508,7 +508,7 @@ VIOAPI  Transform  *get_inverse_linear_transform_ptr(
 @MODIFIED   : Feb. 27, 1995   D. MacDonald  - added grid transforms
 ---------------------------------------------------------------------------- */
 
-static  void  transform_or_invert_point(
+VIOAPI  void  transform_or_invert_point(
     General_transform   *transform,
     BOOLEAN             inverse_flag,
     Real                x,

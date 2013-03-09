@@ -1305,6 +1305,17 @@ VIOAPI  VIO_Transform  *get_linear_transform_ptr(
 VIOAPI  VIO_Transform  *get_inverse_linear_transform_ptr(
     VIO_General_transform   *transform );
 
+
+VIOAPI void  transform_or_invert_point(
+    VIO_General_transform   *transform,
+    VIO_BOOL             inverse_flag,
+    VIO_Real                x,
+    VIO_Real                y,
+    VIO_Real                z,
+    VIO_Real                *x_transformed,
+    VIO_Real                *y_transformed,
+	VIO_Real                *z_transformed );
+
 VIOAPI  void  general_transform_point(
     VIO_General_transform   *transform,
     VIO_Real                x,
